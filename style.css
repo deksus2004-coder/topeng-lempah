@@ -1,0 +1,21 @@
+/* Styling Latar Belakang Hero Section */
+.hero-pattern {
+    background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.8), rgba(15, 16, 18, 0.95)), url('topeng.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Kustomisasi Scrollbar Halus */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0F1012;
+}
+::-webkit-scrollbar-thumb {
+    background: #2D3039;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+}

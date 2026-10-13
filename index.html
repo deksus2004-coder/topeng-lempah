@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topeng Lempah | Pengrajin & Jasa Topeng Tradisional Bali</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        baligold: '#D4AF37',
+                        balired: '#8B0000',
+                        darkbg: '#0F1012',
+                        cardbg: '#1A1C23'
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Penghubung ke CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-darkbg text-gray-100 font-sans antialiased selection:bg-baligold selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkbg/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div
+                    class="w-10 h-10 rounded-full bg-baligold flex items-center justify-center text-darkbg font-bold font-cinzel text-xl">
+                    TL
+                </div>
+                <span class="font-cinzel text-xl font-bold tracking-wider text-baligold">TOPENG LEMPAH</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-baligold transition">Beranda</a>
+                <a href="#about" class="hover:text-baligold transition">Tentang Kami</a>
+                <a href="#catalog" class="hover:text-baligold transition">Koleksi Karya</a>
+                <a href="#services" class="hover:text-baligold transition">Layanan</a>
+                <a href="#contact" class="hover:text-baligold transition">Kontak</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://www.instagram.com/topeng_lempah/" target="_blank"
+                    class="hidden sm:flex bg-gradient-to-r from-amber-500 to-baligold text-darkbg font-semibold px-5 py-2.5 rounded-full text-sm shadow-lg hover:opacity-95 transition items-center gap-2">
+                    <i class="fa-brands fa-instagram text-base"></i> Instagram
+                </a>
+                <!-- Tombol Menu Mobile -->
+                <button id="menu-btn" class="md:hidden text-baligold text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Dropdown Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardbg border-b border-gray-800 px-6 py-4 space-y-3">
+            <a href="#home" class="block hover:text-baligold transition">Beranda</a>
+            <a href="#about" class="block hover:text-baligold transition">Tentang Kami</a>
+            <a href="#catalog" class="block hover:text-baligold transition">Koleksi Karya</a>
+            <a href="#services" class="block hover:text-baligold transition">Layanan</a>
+            <a href="#contact" class="block hover:text-baligold transition">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern min-h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <span
+                class="inline-block px-4 py-1.5 rounded-full bg-baligold/10 text-baligold border border-baligold/30 text-xs font-semibold tracking-widest uppercase">
+                Seni Ukir Tradisional Bali
+            </span>
+            <h1 class="font-cinzel text-4xl sm:text-6xl font-bold tracking-wide text-white leading-tight">
+                Mahakarya Sakral <span class="text-baligold">&</span> Estetik Bali
+            </h1>
+            <p class="text-gray-300 text-base sm:text-lg font-light max-w-2xl mx-auto">
+                Pusat pembuatan dan jasa pemesanan topeng tradisi Bali berkualitas tinggi: Barong, Rangda, Topeng Tari,
+                hingga Topeng Leak dengan detail ukiran tangan maestro seni Bali.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#catalog"
+                    class="w-full sm:w-auto bg-baligold text-darkbg font-bold px-8 py-3.5 rounded-full hover:bg-amber-400 transition shadow-lg shadow-baligold/20">
+                    Jelajahi Koleksi
+                </a>
+                <a href="https://wa.me/6285943029533?text=Halo%20Topeng%20Lempah,%20saya%20tertarik%20untuk%20memesan%20topeng%20tradisional%20Bali."
+                    target="_blank"
+                    class="w-full sm:w-auto border border-gray-600 hover:border-baligold text-white px-8 py-3.5 rounded-full transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i> Konsultasi Pesanan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-cardbg/50 border-t border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-baligold font-semibold text-sm tracking-widest uppercase">Filosofi &
+                        Dedikasi</span>
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Mewariskan Jiwa Seni Melalui
+                        Setiap Pahatan Kayu</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        <strong>Topeng Lempah</strong> lahir dari kecintaan mendalam terhadap kebudayaan dan kesenian
+                        tradisional Bali. Setiap topeng yang kami buat bukan sekadar hiasan atau properti pementasan,
+                        melainkan karya seni bernilai sakral yang dikerjakan menggunakan kayu pilihan oleh tangan-tangan
+                        pengrajin terampil lokal.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="border-l-2 border-baligold pl-4">
+                            <h3 class="font-bold text-xl text-white">100% Handmade</h3>
+                            <p class="text-sm text-gray-400 mt-1">Dipahat manual dengan ketelitian tinggi.</p>
+                        </div>
+                        <div class="border-l-2 border-baligold pl-4">
+                            <h3 class="font-bold text-xl text-white">Kayu Berkualitas</h3>
+                            <p class="text-sm text-gray-400 mt-1">Awet, kuat, dan mudah dibentuk detailnya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="aspect-video sm:aspect-square rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
+                        <img src="topeng2.jpeg" alt="Pahatan Topeng Bali"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <span class="text-baligold font-semibold text-sm tracking-widest uppercase">Katalog Pilihan</span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Koleksi Topeng Tradisi</h2>
+            <p class="text-gray-400">Berbagai jenis topeng sakral dan profan khas Bali siap melengkapi kebutuhan
+                pementasan, dekorasi, maupun koleksi Anda.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Item 1 -->
+            <div
+                class="bg-cardbg rounded-2xl overflow-hidden border border-gray-800 hover:border-baligold/50 transition group">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="topeng3.jpeg" alt="Topeng Barong"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-darkbg/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs text-baligold font-semibold">
+                        Sakral / Pentas</div>
+                </div>
+                <div class="p-6 space-y-4">
+                    <h3 class="font-cinzel text-xl font-bold text-white">Topeng Barong Ket / Bangkung</h3>
+                    <p class="text-gray-400 text-sm">Simbol kebaikan (Dharma) dengan detail ukiran halus, bulu serat
+                        alami, dan finishing prada emas pilihan.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-baligold font-bold text-lg">Custom Order</span>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Topeng%20Lempah,%20saya%20ingin%20memesan%20Topeng%20Barong."
+                            target="_blank"
+                            class="text-sm bg-gray-800 hover:bg-baligold hover:text-darkbg px-4 py-2 rounded-xl transition font-medium">Pesan
+                            Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+                class="bg-cardbg rounded-2xl overflow-hidden border border-gray-800 hover:border-baligold/50 transition group">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="Topeng4.jpeg" alt="Topeng Rangda"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-darkbg/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs text-baligold font-semibold">
+                        Pentas Utama</div>
+                </div>
+                <div class="p-6 space-y-4">
+                    <h3 class="font-cinzel text-xl font-bold text-white">Tapel Topeng Rangda</h3>
+                    <p class="text-gray-400 text-sm">Ratu Calonarang dengan taring khas, lidah menjulur, rambut panjang
+                        berkualitas tinggi, dan estetika mistis yang kuat.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-baligold font-bold text-lg">Custom Order</span>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Topeng%20Lempah,%20saya%20ingin%20memesan%20Topeng%20Rangda."
+                            target="_blank"
+                            class="text-sm bg-gray-800 hover:bg-baligold hover:text-darkbg px-4 py-2 rounded-xl transition font-medium">Pesan
+                            Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+                class="bg-cardbg rounded-2xl overflow-hidden border border-gray-800 hover:border-baligold/50 transition group">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="topeng5.jpeg" alt="Topeng Tari Bali"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-darkbg/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs text-baligold font-semibold">
+                        Tari & Dekorasi</div>
+                </div>
+                <div class="p-6 space-y-4">
+                    <h3 class="font-cinzel text-xl font-bold text-white">Topeng Tari Bali (Pasek, Tua, Sidakarya)</h3>
+                    <p class="text-gray-400 text-sm">Koleksi topeng karakter tari tradisional Bali lengkap dengan
+                        kenyamanan pas di wajah dan ekspresi seni yang hidup.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-baligold font-bold text-lg">Custom Order</span>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Topeng%20Lempah,%20saya%20ingin%20memesan%20Topeng%20Tari%20Bali."
+                            target="_blank"
+                            class="text-sm bg-gray-800 hover:bg-baligold hover:text-darkbg px-4 py-2 rounded-xl transition font-medium">Pesan
+                            Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-cardbg/50 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-baligold font-semibold text-sm tracking-widest uppercase">Layanan Kami</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Apa yang Kami Tawarkan?</h2>
+                <p class="text-gray-400">Kami melayani berbagai keperluan seni ukir dan penyediaan atribut topeng
+                    tradisional Bali.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-darkbg p-8 rounded-2xl border border-gray-800 space-y-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-baligold/10 text-baligold flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold text-white">Pembuatan Custom</h3>
+                    <p class="text-gray-400 text-sm">Menerima pesanan pembuatan topeng sesuai karakter, ukuran, dan
+                        kebutuhan khusus pementasan atau koleksi pribadi Anda.</p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-2xl border border-gray-800 space-y-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-baligold/10 text-baligold flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold text-white">Restorasi & Pengecatan</h3>
+                    <p class="text-gray-400 text-sm">Layanan perbaikan ukiran rusak, penataan ulang rambut/aksesoris,
+                        serta pengecatan ulang (prada/finishing) topeng lama.</p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-2xl border border-gray-800 space-y-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-baligold/10 text-baligold flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold text-white">Pengiriman Aman</h3>
+                    <p class="text-gray-400 text-sm">Pengemasan khusus menggunakan kayu pelindung berlapis aman untuk
+                        pengiriman ke seluruh wilayah Indonesia maupun mancanegara.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="bg-darkbg border-t border-gray-800 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-baligold flex items-center justify-center text-darkbg font-bold font-cinzel text-xl">
+                        TL
+                    </div>
+                    <span class="font-cinzel text-xl font-bold tracking-wider text-baligold">TOPENG LEMPAH</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Pusat kerajinan dan jasa topeng tradisi Bali terbaik. Menjaga keaslian budaya lewat karya seni
+                    tangan profesional.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-cinzel text-lg font-bold text-white">Tautan Cepat</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#home" class="hover:text-baligold transition">Beranda</a></li>
+                    <li><a href="#about" class="hover:text-baligold transition">Tentang Kami</a></li>
+                    <li><a href="#catalog" class="hover:text-baligold transition">Koleksi Karya</a></li>
+                    <li><a href="#services" class="hover:text-baligold transition">Layanan</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-cinzel text-lg font-bold text-white">Hubungi Kami</h4>
+                <p class="text-sm text-gray-400">
+                    <i class="fa-brands fa-instagram text-baligold mr-2"></i>
+                    <a href="https://www.instagram.com/topeng_lempah/" target="_blank"
+                        class="hover:underline">@topeng_lempah</a>
+                </p>
+                <p class="text-sm text-gray-400">
+                    <i class="fa-brands fa-whatsapp text-green-400 mr-2"></i>
+                    <a href="https://wa.me/6285943029533" target="_blank" class="hover:underline">+62 859-4302-9533</a>
+                </p>
+                <p class="text-sm text-gray-400">
+                    <i class="fa-solid fa-location-dot text-baligold mr-2"></i> Bali, Indonesia
+                </p>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-800/60 text-center text-xs text-gray-500">
+            &copy; 2026 Topeng Lempah Bali. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Penghubung ke JavaScript Eksternal -->
+    <script src="script.js"></script>
+</body>
+
+</html>
